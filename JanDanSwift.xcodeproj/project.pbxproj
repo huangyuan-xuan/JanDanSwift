@@ -7,9 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5B965C7228C05564007373F2 /* NewsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B965C7128C05564007373F2 /* NewsModel.swift */; };
+		5B965C7428C08B4F007373F2 /* NewsCellTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B965C7328C08B4F007373F2 /* NewsCellTableViewCell.swift */; };
 		5BF3995928B4A9860023358A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BF3995828B4A9860023358A /* AppDelegate.swift */; };
-		5BF3995B28B4A9860023358A /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BF3995A28B4A9860023358A /* SceneDelegate.swift */; };
-		5BF3995D28B4A9860023358A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BF3995C28B4A9860023358A /* ViewController.swift */; };
 		5BF3996028B4A9860023358A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5BF3995E28B4A9860023358A /* Main.storyboard */; };
 		5BF3996328B4A9860023358A /* JanDanSwift.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 5BF3996128B4A9860023358A /* JanDanSwift.xcdatamodeld */; };
 		5BF3996528B4A9880023358A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5BF3996428B4A9880023358A /* Assets.xcassets */; };
@@ -17,6 +17,11 @@
 		5BF3997328B4A9880023358A /* JanDanSwiftTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BF3997228B4A9880023358A /* JanDanSwiftTests.swift */; };
 		5BF3997D28B4A9880023358A /* JanDanSwiftUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BF3997C28B4A9880023358A /* JanDanSwiftUITests.swift */; };
 		5BF3997F28B4A9880023358A /* JanDanSwiftUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BF3997E28B4A9880023358A /* JanDanSwiftUITestsLaunchTests.swift */; };
+		5BF3999028B4ACBC0023358A /* NewsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BF3998F28B4ACBC0023358A /* NewsViewController.swift */; };
+		5BF3999228B4ACCB0023358A /* GirlsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BF3999128B4ACCB0023358A /* GirlsViewController.swift */; };
+		5BF3999628B4ACE40023358A /* BoringViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BF3999528B4ACE40023358A /* BoringViewController.swift */; };
+		5BF3999928B4B1AA0023358A /* ConfideViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BF3999828B4B1AA0023358A /* ConfideViewController.swift */; };
+		B6D6C18C2E4942287F9920E0 /* Pods_JanDanSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D72552380F41C98724280982 /* Pods_JanDanSwift.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -37,10 +42,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		1A9D79D4F5C89DB720AA0EE0 /* Pods-JanDanSwift.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JanDanSwift.debug.xcconfig"; path = "Target Support Files/Pods-JanDanSwift/Pods-JanDanSwift.debug.xcconfig"; sourceTree = "<group>"; };
+		5B965C7128C05564007373F2 /* NewsModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsModel.swift; sourceTree = "<group>"; };
+		5B965C7328C08B4F007373F2 /* NewsCellTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsCellTableViewCell.swift; sourceTree = "<group>"; };
 		5BF3995528B4A9860023358A /* JanDanSwift.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = JanDanSwift.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5BF3995828B4A9860023358A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		5BF3995A28B4A9860023358A /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		5BF3995C28B4A9860023358A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		5BF3995F28B4A9860023358A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		5BF3996228B4A9860023358A /* JanDanSwift.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = JanDanSwift.xcdatamodel; sourceTree = "<group>"; };
 		5BF3996428B4A9880023358A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -51,6 +57,12 @@
 		5BF3997828B4A9880023358A /* JanDanSwiftUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = JanDanSwiftUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		5BF3997C28B4A9880023358A /* JanDanSwiftUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JanDanSwiftUITests.swift; sourceTree = "<group>"; };
 		5BF3997E28B4A9880023358A /* JanDanSwiftUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JanDanSwiftUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		5BF3998F28B4ACBC0023358A /* NewsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsViewController.swift; sourceTree = "<group>"; };
+		5BF3999128B4ACCB0023358A /* GirlsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GirlsViewController.swift; sourceTree = "<group>"; };
+		5BF3999528B4ACE40023358A /* BoringViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BoringViewController.swift; sourceTree = "<group>"; };
+		5BF3999828B4B1AA0023358A /* ConfideViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfideViewController.swift; sourceTree = "<group>"; };
+		D72552380F41C98724280982 /* Pods_JanDanSwift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_JanDanSwift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F1C0FC4B1A78076D77E638E5 /* Pods-JanDanSwift.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JanDanSwift.release.xcconfig"; path = "Target Support Files/Pods-JanDanSwift/Pods-JanDanSwift.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +70,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B6D6C18C2E4942287F9920E0 /* Pods_JanDanSwift.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -85,6 +98,8 @@
 				5BF3997128B4A9880023358A /* JanDanSwiftTests */,
 				5BF3997B28B4A9880023358A /* JanDanSwiftUITests */,
 				5BF3995628B4A9860023358A /* Products */,
+				ACB03ACC783A4B90BCFB2F40 /* Pods */,
+				9D33EF9B3EFA6F052CCC642A /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -101,9 +116,11 @@
 		5BF3995728B4A9860023358A /* JanDanSwift */ = {
 			isa = PBXGroup;
 			children = (
+				5BF3999728B4B1990023358A /* confide */,
+				5BF3998E28B4ACAA0023358A /* boring */,
+				5BF3998C28B4AC990023358A /* girls */,
+				5BF3998B28B4AC8F0023358A /* news */,
 				5BF3995828B4A9860023358A /* AppDelegate.swift */,
-				5BF3995A28B4A9860023358A /* SceneDelegate.swift */,
-				5BF3995C28B4A9860023358A /* ViewController.swift */,
 				5BF3995E28B4A9860023358A /* Main.storyboard */,
 				5BF3996428B4A9880023358A /* Assets.xcassets */,
 				5BF3996628B4A9880023358A /* LaunchScreen.storyboard */,
@@ -130,6 +147,57 @@
 			path = JanDanSwiftUITests;
 			sourceTree = "<group>";
 		};
+		5BF3998B28B4AC8F0023358A /* news */ = {
+			isa = PBXGroup;
+			children = (
+				5BF3998F28B4ACBC0023358A /* NewsViewController.swift */,
+				5B965C7128C05564007373F2 /* NewsModel.swift */,
+				5B965C7328C08B4F007373F2 /* NewsCellTableViewCell.swift */,
+			);
+			path = news;
+			sourceTree = "<group>";
+		};
+		5BF3998C28B4AC990023358A /* girls */ = {
+			isa = PBXGroup;
+			children = (
+				5BF3999128B4ACCB0023358A /* GirlsViewController.swift */,
+			);
+			path = girls;
+			sourceTree = "<group>";
+		};
+		5BF3998E28B4ACAA0023358A /* boring */ = {
+			isa = PBXGroup;
+			children = (
+				5BF3999528B4ACE40023358A /* BoringViewController.swift */,
+			);
+			path = boring;
+			sourceTree = "<group>";
+		};
+		5BF3999728B4B1990023358A /* confide */ = {
+			isa = PBXGroup;
+			children = (
+				5BF3999828B4B1AA0023358A /* ConfideViewController.swift */,
+			);
+			path = confide;
+			sourceTree = "<group>";
+		};
+		9D33EF9B3EFA6F052CCC642A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D72552380F41C98724280982 /* Pods_JanDanSwift.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		ACB03ACC783A4B90BCFB2F40 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				1A9D79D4F5C89DB720AA0EE0 /* Pods-JanDanSwift.debug.xcconfig */,
+				F1C0FC4B1A78076D77E638E5 /* Pods-JanDanSwift.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -137,9 +205,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 5BF3998228B4A9880023358A /* Build configuration list for PBXNativeTarget "JanDanSwift" */;
 			buildPhases = (
+				AA6E99C8F7084DD9D9BB0411 /* [CP] Check Pods Manifest.lock */,
 				5BF3995128B4A9860023358A /* Sources */,
 				5BF3995228B4A9860023358A /* Frameworks */,
 				5BF3995328B4A9860023358A /* Resources */,
+				9A4FADFF03C72ADD215DE0E8 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -256,15 +326,61 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		9A4FADFF03C72ADD215DE0E8 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-JanDanSwift/Pods-JanDanSwift-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-JanDanSwift/Pods-JanDanSwift-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-JanDanSwift/Pods-JanDanSwift-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		AA6E99C8F7084DD9D9BB0411 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-JanDanSwift-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		5BF3995128B4A9860023358A /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5BF3995D28B4A9860023358A /* ViewController.swift in Sources */,
+				5B965C7228C05564007373F2 /* NewsModel.swift in Sources */,
+				5BF3999928B4B1AA0023358A /* ConfideViewController.swift in Sources */,
+				5BF3999228B4ACCB0023358A /* GirlsViewController.swift in Sources */,
 				5BF3996328B4A9860023358A /* JanDanSwift.xcdatamodeld in Sources */,
 				5BF3995928B4A9860023358A /* AppDelegate.swift in Sources */,
-				5BF3995B28B4A9860023358A /* SceneDelegate.swift in Sources */,
+				5BF3999028B4ACBC0023358A /* NewsViewController.swift in Sources */,
+				5B965C7428C08B4F007373F2 /* NewsCellTableViewCell.swift in Sources */,
+				5BF3999628B4ACE40023358A /* BoringViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -436,6 +552,7 @@
 		};
 		5BF3998328B4A9880023358A /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1A9D79D4F5C89DB720AA0EE0 /* Pods-JanDanSwift.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -464,6 +581,7 @@
 		};
 		5BF3998428B4A9880023358A /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F1C0FC4B1A78076D77E638E5 /* Pods-JanDanSwift.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
