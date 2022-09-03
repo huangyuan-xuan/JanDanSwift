@@ -14,6 +14,21 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
+		<key>MZRefresh-MZRefresh.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>MZRefresh.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>NVActivityIndicatorView.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 		<key>Pods-JanDanSwift.xcscheme</key>
 		<dict>
 			<key>isShown</key>
