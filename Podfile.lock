@@ -1,23 +1,21 @@
 PODS:
   - Alamofire (5.6.2)
   - Kingfisher (7.3.2)
-  - MZRefresh (0.0.4):
-    - NVActivityIndicatorView
-  - NVActivityIndicatorView (5.1.1):
-    - NVActivityIndicatorView/Base (= 5.1.1)
-  - NVActivityIndicatorView/Base (5.1.1)
+  - Masonry (1.1.0)
+  - MJRefresh (3.7.5)
   - SnapKit (5.6.0)
 
 DEPENDENCIES:
   - Alamofire
   - Kingfisher (~> 7.0)
-  - MZRefresh (~> 0.0.4)
+  - Masonry (= 1.1.0)
+  - MJRefresh
   - SnapKit (~> 5.6.0)
 
 SPEC REPOS:
   https://mirrors.tuna.tsinghua.edu.cn/git/CocoaPods/Specs.git:
-    - MZRefresh
-    - NVActivityIndicatorView
+    - Masonry
+    - MJRefresh
   trunk:
     - Alamofire
     - Kingfisher
@@ -26,10 +24,10 @@ SPEC REPOS:
 SPEC CHECKSUMS:
   Alamofire: d368e1ff8a298e6dde360e35a3e68e6c610e7204
   Kingfisher: 0086ad83719761ba9b2cdaf6ef4d5b4878cbae23
-  MZRefresh: 3b676dd7d59996200629956503179f2dda3a0b7d
-  NVActivityIndicatorView: 1f6c5687f1171810aa27a3296814dc2d7dec3667
+  Masonry: 678fab65091a9290e40e2832a55e7ab731aad201
+  MJRefresh: fdf5e979eb406a0341468932d1dfc8b7f9fce961
   SnapKit: e01d52ebb8ddbc333eefe2132acf85c8227d9c25
 
-PODFILE CHECKSUM: 3b06af5767386eab5f6eda9d1d32848031405e78
+PODFILE CHECKSUM: 6276a5b0aea9fafc9d7f05a3be9bea876d952d29
 
 COCOAPODS: 1.11.3

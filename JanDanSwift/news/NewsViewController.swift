@@ -8,7 +8,7 @@
 import UIKit
 import Alamofire
 import SnapKit
-import MZRefresh
+import MJRefresh
 class NewsViewController: UIViewController,UITableViewDataSource,UITableViewDelegate {
     
     var newsListView : UITableView!
@@ -25,14 +25,26 @@ class NewsViewController: UIViewController,UITableViewDataSource,UITableViewDele
         newsListView = UITableView(frame: view.bounds)
         newsListView.dataSource = self
         newsListView.delegate = self
-        newsListView.setRefreshHeader(MZRefreshNormalHeader(beginRefresh: {
-            self.loadNewsList(loadMore: false)
-        }))
-        newsListView.setRefreshFooter(MZRefreshNormalFooter(beginRefresh: {
-            self.loadNewsList(loadMore: true)
-        }))
+        let header = MJRefreshNormalHeader()
+        header.setRefreshingTarget(self, refreshingAction: #selector(refresh))
+        header.lastUpdatedTimeLabel?.isHidden = true
+        newsListView.mj_header = header
+        
+        let footer = MJRefreshAutoNormalFooter();
+        newsListView.mj_footer = footer;
+        footer.setRefreshingTarget(self, refreshingAction: #selector(loadMore))
+        
+
+        
         view.addSubview(newsListView)
         loadNewsList(loadMore: false)
+    }
+    
+    @objc func refresh(){
+        loadNewsList(loadMore: false)
+    }
+    @objc func loadMore(){
+        loadNewsList(loadMore: true)
     }
     
     
@@ -66,7 +78,7 @@ class NewsViewController: UIViewController,UITableViewDataSource,UITableViewDele
        
     }
 
-    func loadNewsList(loadMore:Bool){
+   @objc func loadNewsList(loadMore:Bool){
         if(loadMore){
             currentPage = currentPage+1
         }else{
@@ -79,9 +91,10 @@ class NewsViewController: UIViewController,UITableViewDataSource,UITableViewDele
         
         AF.request(url).responseString(completionHandler:  {(response) in
             if(loadMore){
-                self.newsListView.stopFooterRefreshing()
+                self.newsListView.mj_footer?.endRefreshing()
+                
             }else{
-                self.newsListView.stopHeaderRefreshing()
+                self.newsListView.mj_header?.endRefreshing()
             }
             switch response.result{
             case .success(let json):
@@ -110,7 +123,6 @@ class NewsViewController: UIViewController,UITableViewDataSource,UITableViewDele
                 }else{
                     newsList = currentData
                 }
-               
                 self.newsListView.reloadData()
             }
 

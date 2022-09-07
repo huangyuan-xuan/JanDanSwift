@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5B4037EF28C3470000E724F0 /* BoringPictureModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B4037EE28C3470000E724F0 /* BoringPictureModel.swift */; };
+		5B4037F128C366D600E724F0 /* BoringCellTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B4037F028C366D600E724F0 /* BoringCellTableViewCell.swift */; };
 		5B965C7228C05564007373F2 /* NewsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B965C7128C05564007373F2 /* NewsModel.swift */; };
 		5B965C7428C08B4F007373F2 /* NewsCellTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B965C7328C08B4F007373F2 /* NewsCellTableViewCell.swift */; };
 		5BF3995928B4A9860023358A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BF3995828B4A9860023358A /* AppDelegate.swift */; };
@@ -43,6 +45,8 @@
 
 /* Begin PBXFileReference section */
 		1A9D79D4F5C89DB720AA0EE0 /* Pods-JanDanSwift.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JanDanSwift.debug.xcconfig"; path = "Target Support Files/Pods-JanDanSwift/Pods-JanDanSwift.debug.xcconfig"; sourceTree = "<group>"; };
+		5B4037EE28C3470000E724F0 /* BoringPictureModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BoringPictureModel.swift; sourceTree = "<group>"; };
+		5B4037F028C366D600E724F0 /* BoringCellTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BoringCellTableViewCell.swift; sourceTree = "<group>"; };
 		5B965C7128C05564007373F2 /* NewsModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsModel.swift; sourceTree = "<group>"; };
 		5B965C7328C08B4F007373F2 /* NewsCellTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsCellTableViewCell.swift; sourceTree = "<group>"; };
 		5BF3995528B4A9860023358A /* JanDanSwift.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = JanDanSwift.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -169,6 +173,8 @@
 			isa = PBXGroup;
 			children = (
 				5BF3999528B4ACE40023358A /* BoringViewController.swift */,
+				5B4037EE28C3470000E724F0 /* BoringPictureModel.swift */,
+				5B4037F028C366D600E724F0 /* BoringCellTableViewCell.swift */,
 			);
 			path = boring;
 			sourceTree = "<group>";
@@ -376,10 +382,12 @@
 				5B965C7228C05564007373F2 /* NewsModel.swift in Sources */,
 				5BF3999928B4B1AA0023358A /* ConfideViewController.swift in Sources */,
 				5BF3999228B4ACCB0023358A /* GirlsViewController.swift in Sources */,
+				5B4037EF28C3470000E724F0 /* BoringPictureModel.swift in Sources */,
 				5BF3996328B4A9860023358A /* JanDanSwift.xcdatamodeld in Sources */,
 				5BF3995928B4A9860023358A /* AppDelegate.swift in Sources */,
 				5BF3999028B4ACBC0023358A /* NewsViewController.swift in Sources */,
 				5B965C7428C08B4F007373F2 /* NewsCellTableViewCell.swift in Sources */,
+				5B4037F128C366D600E724F0 /* BoringCellTableViewCell.swift in Sources */,
 				5BF3999628B4ACE40023358A /* BoringViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -13,5 +13,6 @@ target 'JanDanSwift' do
   pod 'Kingfisher', '~> 7.0'
   # https://github.com/SnapKit/SnapKit
   pod 'SnapKit', '~> 5.6.0'
-  pod 'MZRefresh', '~> 0.0.4'
+  pod 'MJRefresh'
+  pod 'Masonry', '1.1.0'
 end
