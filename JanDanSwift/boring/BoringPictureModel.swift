@@ -48,6 +48,8 @@ struct BoringPictureImage:Encodable{
     var full_url:String
     var width:CGFloat  = 0
     var height:CGFloat = 0
+    var rowWidth:CGFloat = 0
+    var rowHeight:CGFloat = 0
    
 }
 extension BoringPictureImage:Decodable{
@@ -61,7 +63,10 @@ extension BoringPictureImage:Decodable{
             if let widthPix = result["PixelWidth"] as? CGFloat, let heightPix = result["PixelHeight"] as? CGFloat {
                 width = UIScreen.main.bounds.width - CGFloat(20)
                 height = heightPix * width / widthPix;
-            
+                rowWidth = widthPix
+                rowHeight = heightPix
+                
+                
             }
         }
         

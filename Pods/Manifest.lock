@@ -1,20 +1,20 @@
 PODS:
   - Alamofire (5.6.2)
   - Kingfisher (7.3.2)
-  - Masonry (1.1.0)
+  - MBProgressHUD (1.2.0)
   - MJRefresh (3.7.5)
   - SnapKit (5.6.0)
 
 DEPENDENCIES:
   - Alamofire
   - Kingfisher (~> 7.0)
-  - Masonry (= 1.1.0)
+  - MBProgressHUD (~> 1.2.0)
   - MJRefresh
   - SnapKit (~> 5.6.0)
 
 SPEC REPOS:
   https://mirrors.tuna.tsinghua.edu.cn/git/CocoaPods/Specs.git:
-    - Masonry
+    - MBProgressHUD
     - MJRefresh
   trunk:
     - Alamofire
@@ -24,10 +24,10 @@ SPEC REPOS:
 SPEC CHECKSUMS:
   Alamofire: d368e1ff8a298e6dde360e35a3e68e6c610e7204
   Kingfisher: 0086ad83719761ba9b2cdaf6ef4d5b4878cbae23
-  Masonry: 678fab65091a9290e40e2832a55e7ab731aad201
+  MBProgressHUD: 3ee5efcc380f6a79a7cc9b363dd669c5e1ae7406
   MJRefresh: fdf5e979eb406a0341468932d1dfc8b7f9fce961
   SnapKit: e01d52ebb8ddbc333eefe2132acf85c8227d9c25
 
-PODFILE CHECKSUM: 6276a5b0aea9fafc9d7f05a3be9bea876d952d29
+PODFILE CHECKSUM: bdf6eec0bbf4d662397272f11a5a7aac8c305e16
 
 COCOAPODS: 1.11.3

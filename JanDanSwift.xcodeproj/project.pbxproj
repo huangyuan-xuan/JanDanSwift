@@ -22,7 +22,6 @@
 		5BF3999028B4ACBC0023358A /* NewsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BF3998F28B4ACBC0023358A /* NewsViewController.swift */; };
 		5BF3999228B4ACCB0023358A /* GirlsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BF3999128B4ACCB0023358A /* GirlsViewController.swift */; };
 		5BF3999628B4ACE40023358A /* BoringViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BF3999528B4ACE40023358A /* BoringViewController.swift */; };
-		5BF3999928B4B1AA0023358A /* ConfideViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BF3999828B4B1AA0023358A /* ConfideViewController.swift */; };
 		B6D6C18C2E4942287F9920E0 /* Pods_JanDanSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D72552380F41C98724280982 /* Pods_JanDanSwift.framework */; };
 /* End PBXBuildFile section */
 
@@ -64,7 +63,6 @@
 		5BF3998F28B4ACBC0023358A /* NewsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsViewController.swift; sourceTree = "<group>"; };
 		5BF3999128B4ACCB0023358A /* GirlsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GirlsViewController.swift; sourceTree = "<group>"; };
 		5BF3999528B4ACE40023358A /* BoringViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BoringViewController.swift; sourceTree = "<group>"; };
-		5BF3999828B4B1AA0023358A /* ConfideViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfideViewController.swift; sourceTree = "<group>"; };
 		D72552380F41C98724280982 /* Pods_JanDanSwift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_JanDanSwift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F1C0FC4B1A78076D77E638E5 /* Pods-JanDanSwift.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JanDanSwift.release.xcconfig"; path = "Target Support Files/Pods-JanDanSwift/Pods-JanDanSwift.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -120,7 +118,6 @@
 		5BF3995728B4A9860023358A /* JanDanSwift */ = {
 			isa = PBXGroup;
 			children = (
-				5BF3999728B4B1990023358A /* confide */,
 				5BF3998E28B4ACAA0023358A /* boring */,
 				5BF3998C28B4AC990023358A /* girls */,
 				5BF3998B28B4AC8F0023358A /* news */,
@@ -177,14 +174,6 @@
 				5B4037F028C366D600E724F0 /* BoringCellTableViewCell.swift */,
 			);
 			path = boring;
-			sourceTree = "<group>";
-		};
-		5BF3999728B4B1990023358A /* confide */ = {
-			isa = PBXGroup;
-			children = (
-				5BF3999828B4B1AA0023358A /* ConfideViewController.swift */,
-			);
-			path = confide;
 			sourceTree = "<group>";
 		};
 		9D33EF9B3EFA6F052CCC642A /* Frameworks */ = {
@@ -380,7 +369,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				5B965C7228C05564007373F2 /* NewsModel.swift in Sources */,
-				5BF3999928B4B1AA0023358A /* ConfideViewController.swift in Sources */,
 				5BF3999228B4ACCB0023358A /* GirlsViewController.swift in Sources */,
 				5B4037EF28C3470000E724F0 /* BoringPictureModel.swift in Sources */,
 				5BF3996328B4A9860023358A /* JanDanSwift.xcdatamodeld in Sources */,

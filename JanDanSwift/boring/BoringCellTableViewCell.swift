@@ -9,7 +9,6 @@ import UIKit
 import Kingfisher
 import CoreAudio
 import SwiftUI
-import Masonry
 
 class BoringCellTableViewCell: UITableViewCell {
 
@@ -24,6 +23,9 @@ class BoringCellTableViewCell: UITableViewCell {
 
     override init(style: UITableViewCell.CellStyle, reuseIdentifier: String?){
         super.init(style: style, reuseIdentifier: reuseIdentifier)
+        
+            contentView.layer.cornerRadius = 10
+            contentView.layer.masksToBounds = true
         
             _authorLabel = UILabel()
             _authorLabel.adjustsFontSizeToFitWidth = true
@@ -40,10 +42,10 @@ class BoringCellTableViewCell: UITableViewCell {
             _contentLabel.translatesAutoresizingMaskIntoConstraints = false
             contentView.addSubview(_contentLabel)
         
-        _contentImageView  = UIImageView(frame: CGRect.zero)
-        _contentImageView.translatesAutoresizingMaskIntoConstraints = false
-        _contentImageView.contentMode = .scaleAspectFit
-        contentView.addSubview(_contentImageView)
+            _contentImageView  = UIImageView(frame: CGRect.zero)
+            _contentImageView.translatesAutoresizingMaskIntoConstraints = false
+            _contentImageView.contentMode = .scaleAspectFit
+            contentView.addSubview(_contentImageView)
         
             _positiveVoteLabel  = UILabel()
             _positiveVoteLabel.adjustsFontSizeToFitWidth = true
@@ -64,26 +66,7 @@ class BoringCellTableViewCell: UITableViewCell {
             _moreFunctionImageView.translatesAutoresizingMaskIntoConstraints = false;
             _moreFunctionImageView.contentMode = .scaleAspectFit
             contentView.addSubview(_moreFunctionImageView)
-       
-           
-            
         
-    }
-
-    func setData(boringPictureItem: BoringPictureItem) {
-
-        _authorLabel.text = boringPictureItem.author;
-        _timeLabel.text  = boringPictureItem.date
-
-        _contentLabel.text = boringPictureItem.content
-        _contentImageView.kf.setImage(with: URL(string: boringPictureItem.images[0].url) )
-        
-        _contentImageView.kf.indicatorType = .activity
-        
-        
-        _positiveVoteLabel.text = String(format: "OO %d", boringPictureItem.vote_positive)
-        _negativeVoteLabel.text = String(format: "XX %d", boringPictureItem.vote_negative)
-        _commentCountLabel.text =  String(format: "吐槽 %d", boringPictureItem.sub_comment_count)
         
         
         _authorLabel.snp.makeConstraints{(make)->Void in
@@ -108,8 +91,6 @@ class BoringCellTableViewCell: UITableViewCell {
 
         _contentImageView.snp.makeConstraints{(make)->Void in
             make.top.equalTo(_contentLabel.snp.bottom);
-            make.width.equalTo(boringPictureItem.images[0].width);
-            make.height.equalTo(boringPictureItem.images[0].height)
             make.centerX.equalTo(self.contentView.snp.centerX)
 
         }
@@ -140,13 +121,36 @@ class BoringCellTableViewCell: UITableViewCell {
             make.top.equalTo(_contentImageView.snp.bottom).offset(8)
             make.width.equalTo(perFunctionWidth)
         }
+       
+           
+            
         
-        
-    
-        
-        
-        
+    }
 
+    func setData(boringPictureItem: BoringPictureItem) {
+
+        _authorLabel.text = boringPictureItem.author;
+        _timeLabel.text  = boringPictureItem.date
+
+        _contentLabel.text = boringPictureItem.content
+        _contentImageView.kf.setImage(with: URL(string: boringPictureItem.images[0].url) )
+        
+        _contentImageView.kf.indicatorType = .activity
+        
+        
+        _positiveVoteLabel.text = String(format: "OO %d", boringPictureItem.vote_positive)
+        _negativeVoteLabel.text = String(format: "XX %d", boringPictureItem.vote_negative)
+        _commentCountLabel.text =  String(format: "吐槽 %d", boringPictureItem.sub_comment_count)
+        
+        
+        _contentImageView.snp.remakeConstraints{(make) in
+            make.top.equalTo(_contentLabel.snp.bottom);
+            make.centerX.equalTo(self.contentView.snp.centerX)
+            make.width.equalTo(boringPictureItem.images[0].width)
+            make.height.equalTo(boringPictureItem.images[0].height)
+            
+        }
+        
     }
 
     required init?(coder aDecoder: NSCoder) {

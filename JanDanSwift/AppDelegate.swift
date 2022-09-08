@@ -20,8 +20,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         let news = NewsViewController()
         news.tabBarItem.title = "新鲜事"
         
-        let confide = ConfideViewController()
-        confide.tabBarItem.title = "树洞"
         
         let boring = BoringViewController()
         boring.tabBarItem.title = "无聊图"
@@ -31,7 +29,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
        
         let tabbarControll = UITabBarController()
         tabbarControll.tabBar.clipsToBounds = true
-        tabbarControll.setViewControllers([news,confide,boring,girls], animated: true)
+        tabbarControll.setViewControllers([news,boring,girls], animated: true)
         
         let nav = UINavigationController(rootViewController: tabbarControll);
         nav.setNavigationBarHidden(true, animated: true)

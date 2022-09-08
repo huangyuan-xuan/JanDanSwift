@@ -29,10 +29,8 @@ class BoringViewController: UIViewController, UITableViewDataSource, UITableView
         header.lastUpdatedTimeLabel?.isHidden = true
         boringPictureListView.mj_header = header
         
-        let footer = MJRefreshAutoNormalFooter();
-        boringPictureListView.mj_footer = footer;
-        footer.setRefreshingTarget(self, refreshingAction: #selector(loadMore))
         view.addSubview(boringPictureListView)
+        
         loadBoringPictureList(loadMore: false)
     }
 
@@ -56,21 +54,14 @@ class BoringViewController: UIViewController, UITableViewDataSource, UITableView
         }
 
         cell?.setData(boringPictureItem: boringPictureList[indexPath.row])
-        if(indexPath.row % 2 != 0){
-            cell?.contentView.backgroundColor = .red
-        }else{
-            cell?.contentView.backgroundColor = .green
-        }
-        
         return cell!
     }
 
 //    // 自定义单元格高度
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         
-        var imgHeight = boringPictureList[indexPath.row].images[0].height + 110;
-        debugPrint("单元格高度-> \(imgHeight) url-> \(boringPictureList[indexPath.row].images[0].url)")
-        return imgHeight + 110
+        let height = boringPictureList[indexPath.row].images[0].height
+        return height + 120
     }
 
     // 点击单元格响应事件
@@ -120,6 +111,13 @@ class BoringViewController: UIViewController, UITableViewDataSource, UITableView
             if boringPictureModel != nil {
                 debugPrint("showResponse")
                 let currentData = boringPictureModel?.data ?? []
+                
+                if(boringPictureList.count==0){
+                    let footer = MJRefreshAutoNormalFooter();
+                    boringPictureListView.mj_footer = footer;
+                    footer.setRefreshingTarget(self, refreshingAction: #selector(loadMore))
+                }
+                
                 if loadmore {
                     boringPictureList.append(contentsOf: currentData)
                 } else {

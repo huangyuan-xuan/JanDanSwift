@@ -20,8 +20,6 @@ class NewsCellTableViewCell: UITableViewCell {
     override init(style: UITableViewCell.CellStyle, reuseIdentifier: String?){
         super.init(style: style, reuseIdentifier: reuseIdentifier)
         
-        
-
         titleLabel = UILabel()
         titleLabel.lineBreakMode=NSLineBreakMode.byTruncatingTail
         titleLabel.translatesAutoresizingMaskIntoConstraints = false
@@ -71,13 +69,9 @@ class NewsCellTableViewCell: UITableViewCell {
         let imageUrl  = newsItem.custom_fields.thumb_c[0]
         self.converImageView.backgroundColor = .orange
         let url = URL(string: imageUrl)
-        
-        
+                
         self.converImageView.kf.setImage(with: url )
 
-        
-        
-        
         converImageView.snp.makeConstraints{(make)->Void in
             
             make.width.equalTo(120)
